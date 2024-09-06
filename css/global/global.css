@@ -31,6 +31,8 @@ img {
   display: block;
 }
 
-img[src$=".jpg"] {
+img[src$='.jpg'],
+img[src$='.jpeg'],
+img[src$='.png'] {
   border-radius: 4px;
 }

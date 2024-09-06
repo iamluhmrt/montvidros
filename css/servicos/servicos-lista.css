@@ -17,10 +17,6 @@
   overflow-x: auto;
 }
 
-#bicicleta .servicos-lista ul {
-  padding: 0px 0px 20px 0px;
-}
-
 .servicos-lista li {
   flex: 1;
   min-width: 280px;
@@ -58,7 +54,7 @@
   padding-left: 20px;
 }
 
-@media (min-width: 1500px) {
+/* @media (min-width: 1500px) {
   .servicos-lista img {
     height: 497px;
   }
@@ -79,7 +75,7 @@
   .servicos-lista li span {
     padding-left: 0;
   }
-}
+} */
 
 @media (max-width: 800px) {
   .servicos-lista {
