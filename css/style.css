@@ -12,8 +12,8 @@
 /* Home */
 @import './home/introducao.css';
 @import './home/tecnologia.css';
-@import './home/parceiros.css';
-@import './home/depoimento.css';
+@import './home/vantagens.css';
+@import './home/perguntas.css';
 
 /* Bicicletas */
 @import './servicos/servicos-lista.css';
@@ -25,8 +25,6 @@
 
 /* Seguros */
 @import './seguros/seguros.css';
-@import './seguros/vantagens.css';
-@import './seguros/perguntas.css';
 
 /* Contato */
 @import './contato/contato.css';

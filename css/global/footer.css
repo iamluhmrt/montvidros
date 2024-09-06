@@ -19,7 +19,7 @@
 }
 
 .footer-contato li:nth-child(even):after {
-  content: "";
+  content: '';
   display: block;
   max-width: 360px;
   height: 2px;
