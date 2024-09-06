@@ -16,8 +16,8 @@
 @import './home/depoimento.css';
 
 /* Bicicletas */
-@import './bicicletas/servicos-lista.css';
-@import './bicicletas/servicos.css';
+@import './servicos/servicos-lista.css';
+@import './servicos/servicos.css';
 
 /* Bicicleta */
 @import './bicicleta/bicicleta.css';

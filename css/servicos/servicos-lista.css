@@ -32,6 +32,7 @@
 
 .servicos-lista img {
   margin-bottom: 16px;
+  height: 497px;
 }
 
 .servicos-lista h3 {
@@ -46,7 +47,7 @@
   height: 8px;
   width: 12px;
   margin-right: 8px;
-  background-color: var(--cor-p1);
+  background-color: var(--cor-p6);
   transition: width 0.2s;
 }
 
