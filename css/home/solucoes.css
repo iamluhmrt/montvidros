@@ -1,79 +1,79 @@
-.tecnologia-bg {
+.solucoes-bg {
   background-color: var(--cor-11);
   box-shadow: inset 0 80px var(--cor-0);
 }
 
-.tecnologia {
+.solucoes {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 }
 
-.tecnologia-imagem img {
+.solucoes-imagem img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: right;
 }
 
-.tecnologia-conteudo {
+.solucoes-conteudo {
   padding-top: 160px;
   padding-bottom: 160px;
 }
 
-.tecnologia-conteudo > span {
+.solucoes-conteudo > span {
   display: block;
   margin-bottom: 20px;
 }
 
-.tecnologia-conteudo h2 {
+.solucoes-conteudo h2 {
   margin-bottom: 32px;
 }
 
-.tecnologia-conteudo > p {
+.solucoes-conteudo > p {
   margin-bottom: 20px;
 }
 
-.tecnologia a {
+.solucoes a {
   margin-bottom: 80px;
 }
 
-.tecnologia-vantagens {
+.solucoes-vantagens {
   display: flex;
   gap: 40px;
 }
 
-.tecnologia-vantagens h3 {
+.solucoes-vantagens h3 {
   margin-bottom: 8px;
   width: max-content;
 }
 
-.tecnologia-vantagens img {
+.solucoes-vantagens img {
   width: 24px;
   margin-bottom: 8px;
 }
 
 @media (max-width: 800px) {
-  .tecnologia-bg {
+  .solucoes-bg {
     box-shadow: initial;
   }
-  .tecnologia {
+  .solucoes {
     grid-template-columns: 1fr;
   }
-  .tecnologia-conteudo {
+  .solucoes-conteudo {
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  .tecnologia-imagem {
+  .solucoes-imagem {
     display: none;
   }
-  .tecnologia a {
+  .solucoes a {
     margin-bottom: 60px;
   }
 }
 
 @media (max-width: 600px) {
-  .tecnologia-vantagens {
+  .solucoes-vantagens {
     flex-direction: column;
   }
 }

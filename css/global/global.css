@@ -36,3 +36,4 @@ img[src$='.jpeg'],
 img[src$='.png'] {
   border-radius: 4px;
 }
+
