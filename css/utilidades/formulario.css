@@ -6,7 +6,7 @@
 
 .form label {
   display: block;
-  font: 400 1rem/1.5 "Poppins", sans-serif;
+  font: 400 1rem/1.5 'Poppins', sans-serif;
   margin-bottom: 4px;
 }
 
@@ -14,10 +14,27 @@
   grid-column: span 2;
 }
 
-.form input[type="text"],
-.form input[type="email"],
+.form .col-contact {
+  display: grid;
+  grid-column: span 2;
+  justify-items: center;
+  gap: 25px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.form .col-contact-item a {
+  grid-column: 1;
+  max-width: 45ch;
+}
+.form .col-contact-item img {
+  grid-column: 2;
+}
+
+.form input[type='text'],
+.form input[type='tel'],
+.form input[type='email'],
 .form textarea {
-  font: 400 1rem/1.5 "Roboto", sans-serif;
+  font: 400 1rem/1.5 'Roboto', sans-serif;
   background: var(--cor-1);
   border: 1px solid var(--cor-2);
   padding: 12px;
@@ -26,13 +43,14 @@
   box-sizing: border-box;
 }
 
-.form input[type="text"]:focus,
-.form input[type="email"]:focus,
+.form input[type='text']:focus,
+.form input[type='email']:focus,
+.form input[type='tel']:focus,
 .form textarea:focus {
   outline: none;
   border-color: var(--cor-p1);
   background: var(--cor-0);
-  box-shadow: 0 0 0 2px #fea;
+  box-shadow: 0 0 0 2px rgb(51, 72, 233);
 }
 
 @media (max-width: 600px) {

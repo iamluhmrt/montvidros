@@ -63,12 +63,12 @@
       <section class="contato-formulario" aria-label="Formulário">
         <form class="form" action="https://api.staticforms.xyz/submit" method="post">
           <div>
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" required placeholder="Seu nome">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="off" required placeholder="Seu nome">
           </div>
           <div>
-            <label for="phone">Telefone</label>
-            <input type="tel" id="phone" name="phone" required placeholder="(21) 9999-9999">
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" autocomplete="off" required placeholder="(21) 9999-9999">
           </div>
           <div class="col-2">
             <label for="email">Email</label>
@@ -76,11 +76,23 @@
           </div>
           <div class="col-2">
             <label for="mensagem">Mensagem</label>
-            <textarea rows="5" id="message" name="message" required placeholder="O que você precisa?"></textarea>
+            <textarea rows="5" id="mensagem" name="mensagem" required placeholder="O que você precisa?"></textarea>
           </div>
-          <button class="botao col-2" type="submit">Enviar Mensagem</button>
-          <input type="hidden" name="accessKey" value="682e3989-b361-433d-b469-fdf4a3c612a9">
-          <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/sucess.html">
+          <div class="col-contact">
+            <div class="col-contact-item">
+              <a class="font-1-m cor-p6" href="https://api.whatsapp.com/send/?phone=5511999001715&text=Ol%C3%A1%2C+eu+vim+pelo+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" target="_blank">
+                Sua mensagem foi enviada com sucesso, você também pode entrar em contato clicando no icone do whatsapp!
+              </a>
+            </div>
+            <div class="col-contact-item">
+              <a class="font-1-m cor-p6" href="https://api.whatsapp.com/send/?phone=5511999001715&text=Ol%C3%A1%2C+eu+vim+pelo+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" target="_blank">
+                <img src="./img/icones/whats.png" width="120" height="120" alt="Whatsapp">
+              </a>
+            </div>
+          </div>
+          <!-- <button class="botao col-2">Enviar Mensagem</button> -->
+          <input type="hidden" name="accessKey" value"43802106-a485-4dd6-b016-b423bc0407b9">
+          <input type="hidden" name="redirectTo" value="">
         </form>
       </section>
     </div>
