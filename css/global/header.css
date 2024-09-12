@@ -29,7 +29,7 @@
   display: block;
   height: 2px;
   width: 0px;
-  background: var(--cor-0);
+  background: var(--cor-12);
   margin-top: 4px;
   transition: 0.3s;
   position: absolute;
