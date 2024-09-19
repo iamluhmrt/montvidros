@@ -36,8 +36,8 @@
         <a class="botao" href="./servicos.html">Conheça nossos serviços</a>
       </div>
       <picture>
-        <source media="(max-width: 800px)" srcset="./img/vidros/sacada/sacada-01.jpg">
-        <img src="./img/vidros/sacada/a4.jpg" width="1280" height="1600" alt="Vidros Sacada">
+        <source media="(max-width: 800px)" id="source-dinamico" srcset="./img/vidros/sacada/sacada-01.jpg">
+        <img src="./img/vidros/sacada/a4.jpg" id="imagem-dinamica" width="1280" height="1600" alt="Vidros Sacada">
       </picture>
     </div>
   </main>
@@ -156,15 +156,13 @@
         <h3 class="font-2-l-b cor-0">Contato</h3>
         <ul class="font-2-m cor-5">
           <li><a href="tel:+552199999999">+55 11 99900-1715</a></li>
-          <li><a href="mailto:contato@bikcraft.com">contato@montvidros.com</a></li>
-          <li>Rua Ali Perto, 42 - Botafogo</li>
-          <li>São Paulo, SP</li>
+          <li><a href="mailto:contato@bikcraft.com">montvidrosmooca@gmail.com</a></li>
         </ul>
         <div class="footer-redes">
           <a href="https://www.instagram.com/montvidros/" target="_blank">
             <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram">
           </a>
-          <a href="./">
+          <a href="https://www.facebook.com/montvidros?mibextid=LQQJ4d" target="_blank">
             <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook">
           </a>
           <a href="https://api.whatsapp.com/send/?phone=5511999001715&text=Ol%C3%A1%2C+eu+vim+pelo+site+e+gostaria+de+mais+informa%C3%A7%C3%B5es.&type=phone_number&app_absent=0" target="_blank">
@@ -185,6 +183,55 @@
       <p class="footer-copy font-2-m cor-6">Montvidros © Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <main class="introducao-bg">
+    <div class="introducao container">
+      <div class="introducao-conteudo">
+        <h1 class="font-1-xxl cor-0">Vidros feitos sob medida<span class="cor-p6">.</span></h1>
+        <p class="font-2-l cor-5">Oferecemos uma ampla gama de serviços que incluem envidraçamento de sacadas, instalação de box para banheiros, coberturas, fachadas e espelhos.</p>
+        <a class="botao" href="./servicos.html">Conheça nossos serviços</a>
+      </div>
+      <picture>
+        <img id="imagem-dinamica" src="./img/vidros/sacada/a4.jpg" width="1280" height="1600" alt="Vidros Sacada">
+      </picture>
+    </div>
+  </main>
+
+  <!-- Adicionando o script diretamente no body -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const imagens = [
+        './img/vidros/sacada/a1.jpg',
+        './img/vidros/sacada/a2.jpg',
+        './img/vidros/sacada/a3.jpg',
+        './img/vidros/sacada/a4.jpg',
+        './img/vidros/box-banheiro/box-banheiro-01.jpg',
+        './img/vidros/box-banheiro/box-banheiro-02.jpeg',
+        './img/vidros/espelhos/a4.jpg',
+        './img/vidros/espelhos/a2.jpg',
+        './img/vidros/espelhos/espelho01.jpg',
+        './img/vidros/espelhos/espelhos-03.jpeg',
+      ];
+
+      let indiceAtual = 0;
+      const imagemElemento = document.getElementById('imagem-dinamica');
+      const sourceElemento = document.getElementById('source-dinamico');
+
+      function trocarImagem() {
+        indiceAtual = (indiceAtual + 1) % imagens.length;
+        imagemElemento.style.opacity = 0; // Suaviza a transição
+        setTimeout(() => {
+          imagemElemento.src = imagens[indiceAtual];
+          sourceElemento.srcset = imagens[indiceAtual]; // Atualiza o srcset para mobile
+          imagemElemento.style.opacity = 1;
+        }, 500); // Tempo para a transição de opacidade
+      }
+
+      // Troca a imagem a cada 3 segundos (3000 milissegundos)
+      setInterval(trocarImagem, 3000);
+    });
+  </script>
+
 </body>
 
 </html>

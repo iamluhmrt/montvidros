@@ -32,7 +32,7 @@
 .contato-endereco {
   margin-bottom: 32px;
   padding-left: 28px;
-  background: url('../../img/icones/place.png') no-repeat 0px 2px;
+  background: url('../../img/icones/whats-cel.png') no-repeat 0px 2px;
   background-size: 20px 20px;
   background-position: 0px 2px;
 }
@@ -44,7 +44,7 @@
 .contato-meios a {
   display: block;
   max-width: max-content;
-  margin-bottom: 8px;
+  margin-bottom: 32px;
   padding-left: 28px;
 }
 
